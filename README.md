@@ -112,13 +112,14 @@ print(report.sources)
 local_deep_research/
 ├── agent.py          # Main research agent orchestration
 ├── search/           # Search backend implementations
-├── llm/              # LLM client wrappers
-├── config/           # Configuration loading
-└── output/           # Report formatting and export
+├── llm/              # LLM client w
 ```
 
-## Notes (Personal)
+## Personal Notes
 
-- I'm running this with `llama3.1:8b` via Ollama on a 16GB M2 Mac — works great at 3 iterations
-- SearXNG backend gives noticeably better results than DuckDuckGo for technical topics; worth setting up
-- Reports saved to `~/research-output/` by default in my config
+- I'm running this with `llama3.1:8b` on a 16GB RAM machine — works great for most topics.
+- SearXNG backend gives noticeably better results than DuckDuckGo for technical queries; worth setting up if you do a lot of research.
+- Saving outputs to a local `reports/` directory with dated filenames has been handy for keeping track of things:
+  ```bash
+  local-deep-research --format markdown "Your question" > reports/$(date +%Y-%m-%d)-topic.md
+  ```
