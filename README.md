@@ -67,8 +67,8 @@ Key settings:
 | `llm.model` | `mistral` | Local model to use |
 | `llm.base_url` | `http://localhost:11434` | Ollama/LM Studio endpoint |
 | `search.backend` | `duckduckgo` | Search engine backend |
-| `research.iterations` | `3` | Number of research iterations |
-| `research.max_results` | `5` | Max search results per query |
+| `research.iterations` | `5` | Number of research iterations |
+| `research.max_results` | `10` | Max search results per query |
 
 ## Usage
 
@@ -118,17 +118,4 @@ local_deep_research/
 
 ## Contributing
 
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-- 🐛 [Report a bug](.github/ISSUE_TEMPLATE/bug_report.md)
-- 💡 [Request a feature](.github/ISSUE_TEMPLATE/feature_request.md)
-- 🔀 [Submit a PR](.github/PULL_REQUEST_TEMPLATE/first_time_contributor.md)
-
-## License
-
-MIT License — see [LICENSE](LICENSE) for details.
-
-## Acknowledgements
-
-- Original project by [LearningCircuit](https://github.com/LearningCircuit/local-deep-research)
-- Built with [LangChain](https://langchain.com), [Ollama](https://ollama.ai), and the open-source AI community
+We welcom
