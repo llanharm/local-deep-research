@@ -67,8 +67,10 @@ Key settings:
 | `llm.model` | `mistral` | Local model to use |
 | `llm.base_url` | `http://localhost:11434` | Ollama/LM Studio endpoint |
 | `search.backend` | `duckduckgo` | Search engine backend |
-| `research.iterations` | `5` | Number of research iterations |
+| `research.iterations` | `3` | Number of research iterations |
 | `research.max_results` | `10` | Max search results per query |
+
+> **Personal note:** I find 3 iterations hits a good balance between depth and speed for most queries on my machine. Bump to 5+ for more thorough research on complex topics.
 
 ## Usage
 
@@ -118,4 +120,4 @@ local_deep_research/
 
 ## Contributing
 
-We welcom
+We welco
