@@ -113,11 +113,12 @@ local_deep_research/
 ├── agent.py          # Main research agent orchestration
 ├── search/           # Search backend implementations
 ├── llm/              # LLM client wrappers
-├── summarizer.py     # Content summarization
-├── report.py         # Report generation
-└── config.py         # Configuration management
+├── config/           # Configuration loading
+└── output/           # Report formatting and export
 ```
 
-## Contributing
+## Notes (Personal)
 
-We welco
+- I'm running this with `llama3.1:8b` via Ollama on a 16GB M2 Mac — works great at 3 iterations
+- SearXNG backend gives noticeably better results than DuckDuckGo for technical topics; worth setting up
+- Reports saved to `~/research-output/` by default in my config
