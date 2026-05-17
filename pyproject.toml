@@ -90,7 +90,8 @@ testpaths = ["tests"]
 python_files = ["test_*.py", "*_test.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
-addopts = "--cov=local_deep_research --cov-report=term-missing --cov-report=xml"
+# Removed --cov-report=xml since I don't use CI; term-missing is enough locally
+addopts = "--cov=local_deep_research --cov-report=term-missing"
 asyncio_mode = "auto"
 
 [tool.coverage.run]
